@@ -30,9 +30,7 @@ function! cd#find_root_by_finddir(bang) abort
     endif
   endfor
 
-  echohl ErrorMsg
-  echo 'No VCS found.'
-  echohl NONE
+  echoerr 'No VCS found.'
 endfunction
 
 " #find_root_by_system {{{1
